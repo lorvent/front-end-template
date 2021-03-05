@@ -17,7 +17,7 @@
 
     <meta name="viewport" content="width=device-width">
 
-    {% include 'pages/common/gtm-head.njk' %}
+    {% include 'src/pages/common/gtm-head.njk' %}
 
     {% block styles %}
     <link href="https://fonts.gstatic.com" rel="preconnect">
@@ -35,17 +35,17 @@
   </head>
 
   <body>
-    {% include 'pages/common/gtm-body.njk' %}
+    {% include 'src/pages/common/gtm-body.njk' %}
 
     <div class="l-page">
-      {% include 'components/header.njk' %}
+      {% include 'src/_components/header.njk' %}
 
       <main class="l-main">
         {% block content %}
         {% endblock %}
       </main>
 
-      {% include 'components/footer.njk' %}
+      {% include 'src/_components/footer.njk' %}
     </div>
   </body>
 </html>
