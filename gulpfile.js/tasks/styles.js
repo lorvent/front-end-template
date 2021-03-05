@@ -14,10 +14,7 @@ const common = require('../common')
 const ignore = require('../utils/ignore')
 const pipeIf = require('../utils/pipe-if')
 
-const srcPaths = path.posix.join(
-  config.get('srcDir'),
-  'assets/styles/**/*.scss'
-)
+const srcPaths = path.posix.join(config.get('srcDir'), 'styles/**/*.scss')
 const isDev = config.get('mode') !== 'production'
 const cleanCss = new CleanCSS({
   level: 2,

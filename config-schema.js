@@ -5,7 +5,7 @@ const convict = require('convict')
 const schema = {
   srcDir: {
     format: String,
-    default: '.',
+    default: 'src/',
     arg: 'src-dir',
   },
   distDir: {
